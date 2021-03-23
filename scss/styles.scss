@@ -1,0 +1,707 @@
+@import "./media.scss";
+@import "./reset.scss";
+
+.header {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../image/Background.png);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  
+  @include for-xs-phone-only {
+    height: 540px;  
+    justify-content: center;
+    flex-direction: column;
+    // НЕ РОЗУМІЮ, ЯК БЕЗ HEIGHT ПОСТАВИТИ ВІДПОВІДНУ ВИСОТY ДЛЯ ФОТО!!!
+    // НЕ РОЗУМІЮ, ЯК БЕЗ HEIGHT ПОСТАВИТИ ВІДПОВІДНУ ВИСОТY ДЛЯ ФОТО!!!
+    // НЕ РОЗУМІЮ, ЯК БЕЗ HEIGHT ПОСТАВИТИ ВІДПОВІДНУ ВИСОТY ДЛЯ ФОТО!!!
+    // НЕ РОЗУМІЮ, ЯК БЕЗ HEIGHT ПОСТАВИТИ ВІДПОВІДНУ ВИСОТY ДЛЯ ФОТО!!!
+    // НЕ РОЗУМІЮ, ЯК БЕЗ HEIGHT ПОСТАВИТИ ВІДПОВІДНУ ВИСОТY ДЛЯ ФОТО!!!
+    // НЕ РОЗУМІЮ, ЯК БЕЗ HEIGHT ПОСТАВИТИ ВІДПОВІДНУ ВИСОТY ДЛЯ ФОТО!!!
+    // НЕ РОЗУМІЮ, ЯК БЕЗ HEIGHT ПОСТАВИТИ ВІДПОВІДНУ ВИСОТY ДЛЯ ФОТО!!!
+    // НЕ РОЗУМІЮ, ЯК БЕЗ HEIGHT ПОСТАВИТИ ВІДПОВІДНУ ВИСОТY ДЛЯ ФОТО!!!
+    // НЕ РОЗУМІЮ, ЯК БЕЗ HEIGHT ПОСТАВИТИ ВІДПОВІДНУ ВИСОТY ДЛЯ ФОТО!!!
+  }
+
+  @include for-sm-phone-only {
+    height: 600px;
+  }
+
+  @include for-small-phone-only {
+    height: 700px;
+    justify-content: flex-start;
+  }
+
+  @include for-tablet-landscape-up {
+    height: 100vh;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include for-small-phone-only {
+      align-items: flex-start;
+      justify-content: space-between;
+      flex-direction: row;
+    }
+
+    @include for-tablet-landscape-up {
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    .logo-styles {
+      color: #ffffff;
+      text-transform: uppercase;
+      font-weight: bold;
+      line-height: 24, 38px;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.25rem;
+
+      @include for-xs-phone-only {
+        margin: 32px auto 0;
+        font-size: 1.25rem;
+      }
+
+      @include for-small-phone-only {
+        padding: 46px 48px;
+      }
+
+    }
+
+    .regisrt-block {
+      display: none;
+      
+      @include for-small-phone-only {
+        display: flex;
+        flex-direction: row;
+        font-family: 'Montserrat', sans-serif;
+        padding: 46px 50px;
+      }
+
+      .registr-styles {
+        color: #ffffff;
+        padding: 0 10px;
+        font-size: 	0.875rem;
+      }
+
+      .hover-effect:hover {
+        border: 2px solid #FFFFFF;
+        border-radius: 40px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  
+  .main-header-info { 
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include for-small-phone-only {
+      margin: 8.25rem auto;
+    }
+
+    .header-title {
+      color: #ffffff;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      font-weight: bold;
+      line-height: 37px; 
+      text-transform: uppercase;
+      font-family: 'Montserrat', sans-serif;
+      
+      @include for-xs-phone-only {
+        font-size: 1.875rem;
+      }
+
+      @include for-sm-phone-only {
+        font-size: 2.75rem;
+        line-height: 63px;
+      }
+
+      @include for-small-phone-only {
+        font-size: 3.25rem;
+      }
+    }
+
+    .header-subtitle {
+      color: #ffffff;
+      margin-top: 15px;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 300;
+
+      @include for-xs-phone-only {
+        width: 80%;
+        text-align: center;
+        line-height: 24px;
+        font-size: 1.125rem;  
+      }
+
+      @include for-sm-phone-only {
+        font-size: 	1.3rem;
+      }
+
+      @include for-small-phone-only {
+        font-size: 	1.5rem;
+      }
+    }
+
+    .header-button {
+      background-color: #FF4E50;
+      color: white;
+      border-radius: 40px;
+      border: 2px solid #FF4E50;
+      font-size: 	0.875rem;
+      padding: 12px 20px;
+      margin-top: 20px;
+      font-family: 'Montserrat', sans-serif;
+
+      @include for-xs-phone-only {
+        padding: 12px 46px;
+      }
+    }
+
+    .header-button:hover {
+      background-color: rgba(255, 255, 255, 0);
+      color: #fdfdfd;
+      border: 2px solid #FF4E50;
+      cursor: pointer;
+    }
+  }
+}
+
+.how-dreams-section {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .title-how-dreams {
+    color: #444444;
+    font-weight: bold;
+    line-height: 27px;
+    font-size: 1.375rem;
+    font-family: 'Montserrat', sans-serif;
+    padding: 35px 0 12px 0;
+
+    @include for-xs-phone-only {
+      padding: 30px 0 5px 0;
+    }
+
+    @include for-tablet-landscape-up {
+      padding-top: 90px;
+    }
+  }
+
+  .all-photo-how-dreams {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include for-phone-only {
+      flex-direction: row;
+      width: 98%;
+      max-width: 768px;
+      margin: 0 auto;
+      justify-content: space-between;
+    }
+
+    @include for-tablet-landscape-up {
+      max-width: 950px;
+    }
+
+    .img-boxes {
+      height: 300px;
+      width: 420px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin-top: 12px;
+
+      @include for-xs-phone-only {
+        height: 280px;
+        width: 100%;
+      }
+
+      @include for-phone-only {
+        width: 236px;
+        height: 400px;
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+      }
+
+      @include for-tablet-landscape-up {
+        width: 300px;
+        height: 400px;
+      }
+
+      .btn-step {
+        background: #FF4E50;
+        border-radius: 40px;
+        border: 1px solid #FF4E50;
+        letter-spacing: 3px;
+        font-size: 0.925rem;
+        line-height: 12px;
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+        padding: 8px 15px;
+        text-transform: uppercase;
+        margin: 25px 0 28px 19px;
+
+        @include for-phone-only {
+          font-size: 	0.625rem;
+          padding: 5px 14px;
+          max-width: 90px;
+        }
+      }
+
+      .btn-step:hover {
+        background-color: rgba(255, 255, 255, 0);
+        color: #fdfdfd;
+        border: 1px solid #FF4E50;
+        cursor: pointer;
+      }
+
+      .top-txt-img-box {
+        color: #ffffff;
+        line-height: 30px;
+        font-size: 	1.5rem;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        margin: 0 30px 0 17px ;
+      }
+
+      .bottom-txt-img-box {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 1.125rem;
+        color: #E3E3E3;
+        line-height: 18px;
+        width: 70%;
+        margin: 15px 17px;
+
+        @include for-phone-only {
+          font-size: 	0.875rem;
+        }
+      }
+    }
+
+    .step_1 {
+      background-image: url(../image/step.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .step_2 {
+      background-image: url(../image/step-2.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .step_3 {
+      background-image: url(../image/step-3.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+  }
+}
+
+.partner-section {
+  width: 100%;
+
+  .title-avatar-section {
+    color: #444444;
+    font-weight: bold;
+    line-height: 27px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 41px;
+    width: 90%;
+    margin: 0 auto;
+    font-size: 	1.375rem;
+
+    @include for-tablet-landscape-up {
+      padding-top: 90px;
+    }
+  }
+
+  .avatar-container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+
+    @include for-xs-phone-only {
+      width: 85%;
+    }
+
+    @include for-small-phone-only {
+      flex-wrap: wrap;
+      width: 80%;
+    }
+
+    .avatar-box {
+      
+      @include for-small-phone-only {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        max-width: 470px;
+      }
+
+      @include for-phone-only {
+        max-width: 580px;
+        margin-top: 20px;
+      }
+
+      @include for-tablet-landscape-up {
+        max-width: 950px;
+      }
+
+      .avatar-blocks {
+        margin: 15px auto;
+        text-align: center;
+  
+        @include for-small-phone-only {
+          width: 50%;
+          margin: 15px 0;
+        }
+
+        @include for-tablet-landscape-up {
+          width: 25%;
+        }
+  
+        .name-styles {
+          font-family: 'Montserrat', sans-serif;
+          font-weight: bold;
+          font-size: 1.125rem;
+          line-height: 22px;
+          color: #444444;
+          padding-top: 17px;
+        }
+  
+        .main-txt-about-avatars {
+          line-height: 18px;
+          font-weight: 300;
+          color: #666666;
+          font-size: 	1rem;
+          font-family: 'Roboto', sans-serif;
+          padding-top: 15px;
+          width: 70%;
+          margin: 0 auto;
+  
+          @include for-xs-phone-only {
+            width: 100%;
+          }
+
+          @include for-phone-only {
+            width: 90%;
+          }
+        }
+      }
+    }
+
+    .avatars-btn {
+      background-color: #FF4E50;
+      color: white;
+      border: 2px solid #FF4E50;
+      border-radius: 40px;
+      margin: 0 auto;
+      padding: 12px 20px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: bold;  
+      line-height: 22px;
+
+      @include for-xs-phone-only {
+        padding: 9px 50px;
+      }
+
+      @include for-small-phone-only {
+        margin-top: 40px;
+      }
+
+      @include for-phone-only {
+        padding: 12px 20px;
+        font-size: 0.8rem;
+      }
+
+      @include for-tablet-landscape-up {
+        padding: 8px 25px;
+      }
+    }
+
+    .avatars-btn:hover {
+      background-color: rgba(255, 255, 255, 0);
+      color: #FF4E50;
+      border: 2px solid #FF4E50;
+      cursor: pointer;
+    }
+
+    .holiday-container {
+      margin-top: 60px;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+
+      .holiday-title-styles {
+        line-height: 27px;
+        color: #444444;
+        font-weight: bold;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.375rem;
+
+        @include for-phone-only {
+          font-size: 1.5rem;
+          padding-top: 40px;
+        }
+      }
+
+      .holiday-txt-styles {
+        padding-top: 25px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.125rem;
+        font-weight: 200;
+        line-height: 14px;
+        color: #666666;
+
+        @include for-xs-phone-only {
+          padding-top: 10px;
+        }
+
+        @include for-phone-only {
+          padding-top: 53px;
+          font-size: 1.2rem;
+        }
+      }
+
+      .input-and-btn {
+        display: flex;
+        padding-top: 25px;
+        flex-direction: column;
+
+        @include for-xs-phone-only {
+          padding-top: 15px;
+        }
+
+        @include for-phone-only {
+          flex-direction: row;
+          justify-content: space-around;
+          width: 85%;
+          max-width: 560px;
+          margin: 0 auto;
+        }
+
+        .input-styles {
+          padding: 13px 0 13px 15px;
+
+          @include for-sm-phone-only {
+            margin: 0 auto;
+            width: 300px;
+          }
+
+          @include for-phone-only {
+            margin: 0;  
+            height: 10px;
+            border: 2px solid #D4D4D4;
+            border-radius: 3px;
+            margin-right: 5px;
+          }
+        }
+
+        .input-styles:hover {
+          border: 2px solid #240000;
+        }
+
+        .last-btn {
+          font-size: 0.875rem;
+          color: white;
+          background: #FF4E50;
+          padding: 12px 27px;
+          margin: 10px auto;
+          border: 2px solid #FF4E50;
+          border-radius: 40px;
+          font-family: 'Montserrat', sans-serif;
+
+          @include for-xs-phone-only {
+            padding: 12px 80px;
+          }
+
+          @include for-phone-only {
+            margin: 0;
+            padding: 8px 27px;
+          }
+        }
+
+        .last-btn:hover {
+          background-color: rgba(255, 255, 255, 0);
+          color: #FF4E50;
+          border: 2px solid #FF4E50;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .footer-containers {
+    display: flex;
+    padding-bottom: 20px;
+    flex-direction: column;
+
+    @include for-phone-only {
+      flex-direction: row;
+    }
+
+    .logo {
+      text-align: center;
+      margin: 19px auto;
+
+      @include for-xs-phone-only {
+        width: 40%;
+      }
+
+      @include for-phone-only {
+        width: 25%;
+        padding: 38px 39px;
+      }
+
+      @include for-tablet-landscape-up {
+        text-align: end;
+      }
+
+      .footer-logo {
+        color: #FF4E50;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1rem;
+      }
+    }
+
+    .links {
+      text-align: center;
+      margin: 14px auto;
+      width: 80%;
+
+      @include for-phone-only {
+        display: flex;
+        flex-direction: column;
+        width: 25%;
+        padding: 38px 0;
+        margin-top: 19px;
+      }
+
+      .company-txt {
+        display: none;
+        
+        @include for-phone-only {
+          display: block;
+          font-size: 0.9rem;
+          font-family: 'Montserrat', sans-serif;
+          font-weight: bold;
+          padding-bottom: 11px;
+        }
+      } 
+
+      .footer-links-styles {
+        text-decoration: none;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 1.125rem;
+        color: #999999;
+        padding: 1px 7px;
+        line-height: 26px;
+      }
+
+      .footer-links-styles:hover {
+        color: #FF4E50;
+        font-size: 1.125rem;
+
+        @include for-tablet-landscape-up {
+          font-size: 2rem;
+          color: #FF4E50;
+          font-weight: bold;
+        }
+      }
+    }
+
+    .partners {
+      text-align: center;
+
+      @include for-phone-only {
+        width: 25%;
+        padding-top: 38px;
+      }
+
+      .partners-styles {
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+        padding-top: 38px;
+        font-weight: bold;
+        font-size: 0.875rem;
+
+        @include for-small-phone-only {
+          padding-top: 20px;
+        }
+      }
+    }
+
+    .icon {
+      text-align: center;
+
+      @include for-phone-only {
+        width: 25%;
+        padding: 38px 40px;
+      }
+
+      @include for-tablet-landscape-up {
+        text-align: start;
+      }
+
+      .designed-style {
+        color: #CCCCCC;
+        letter-spacing: 1px;
+        font-size: 	0.625rem;
+        font-weight: bold;
+        font-family: 'Montserrat', sans-serif;
+        padding-top: 20px;
+        padding-bottom: 8px;
+      }
+
+      .footer-icon {
+        @include for-phone-only {
+          width: 110px;
+          height: 24px;
+          padding-top: 17px;
+        }
+      }
+    }
+  }
+}
+
+.footer::before {
+  content: '';
+  background-color: #FF4E50;
+  height: 3px;
+  margin-top: 24px;
+
+  @include for-phone-only {
+    margin-top: 80px;
+  }
+}
